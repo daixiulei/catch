@@ -1,0 +1,63 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Document</title><style>* {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+        svg{
+            display: none;
+        }
+        #top {
+            height: 10%;
+            background-image: linear-gradient(to bottom right, rgb(243, 179, 94), rgb(216, 126, 55));
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+        #runner {
+            height: 70%;
+        }
+
+        #operator {
+            height: 20%;
+            background-image:radial-gradient(circle at 30% 30%,rgba(253,202,99,1) 5% , rgba(253, 185, 85, 1) 20%, rgba(250, 134, 42, 1));
+            border-radius: 8px 8px 0 0;
+            padding: 4px 4px 0 4px;
+            box-sizing: border-box;
+        }
+        #operator #innerbox {
+            border-radius: 8px 8px 0 0;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            height: 100%;
+            box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        #left-button {
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            height: 20px;
+            width: 20px;
+            user-select: none;
+        }
+        #right-button {
+            position: absolute;
+            top: 40px;
+            right: 40px;
+            height: 20px;
+            width: 20px;
+            user-select: none;
+        }
+        #startOrParse {
+            position: absolute;
+            top: 80px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            height: 20px;
+            width: 40px;
+            text-align: center;
+        }</style><script src="https://cdn.jsdelivr.net/npm/pathseg@1.2.0/pathseg.js"></script><script defer="defer" src="main.d45ca.bundle.js"></script></head><body><div id="top"></div><div id="runner"></div><div id="operator"><div id="innerbox"><div id="left-button">←</div><div id="right-button">→</div><div id="startOrParse">启动</div></div></div></body></html>
